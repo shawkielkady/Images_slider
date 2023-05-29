@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.photoslider{
+    margin: 100px auto;
+    margin-bottom: 10px;
+    width: 800px;
+    height: 250px;
+    position: relative;
+}
+.photoslider img{
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    transition: opacity 1s;
+    height: 250px;
+}
+.photoslider img.active{
+    opacity: 1;
+    width: 100%;
+}
+.controler{
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+.controler .next,
+.controler .prev{
+    width: 100px;
+    background-color: #009688;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.controler .next.disabled,
+.controler .prev.disabled{
+    background-color: rgba(0, 150, 136, 0.5);
+    cursor: no-drop;
+}
+.controler .next{
+    float: right;
+}
+.controler .prev{
+float: left;
+}
+.controler .indicators {
+    width: 60%;
+    float: left;
+  }
+  .controler .indicators ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+  .controler .indicators ul li {
+    display: inline-block;
+    background-color: #F6F6F6;
+    color: #333;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+  }
+  .controler .indicators ul li.active {
+    background-color: #009688;
+    color: #FFF;
+  }
+  
