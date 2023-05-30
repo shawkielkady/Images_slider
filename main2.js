@@ -24,8 +24,6 @@ for(var i=0;i<paginationsBullets.length;i++){
 
     }
 }
-console.log(newcount);
-console.log(paginationsBullets.length);
 Checker();
 function nextslide(){
     if(nextbtn.classList.contains("disabled")){
